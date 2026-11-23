@@ -1,0 +1,120 @@
+<!DOCTYPE html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Booking Your Tours - Dubai Desert Safari & Lahbab Red Dunes</title>
+<style>*{box-sizing:border-box}body{font-family:Inter,Arial,sans-serif;margin:0;background:#fff8ec;color:#1a1a1a}header{background:#111;color:#fff;padding:12px 18px;display:flex;justify-content:space-between;align-items:center;position:sticky;top:0;z-index:10;flex-wrap:wrap;gap:10px}header a{color:#ffd400;text-decoration:none;font-weight:800}.logo{font-size:20px}.logo span{color:#ffd400}.hero{position:relative;min-height:520px;display:flex;align-items:center;justify-content:center;text-align:center;color:#fff;background:url(images/hero.jpg) center/cover} .hero:before{content:"";position:absolute;inset:0;background:linear-gradient(rgba(0,0,0,.35),rgba(0,0,0,.65))}.hero>div{position:relative;padding:20px;max-width:800px}.hero h1{font-size:44px;line-height:1.05;margin:0}.hero p{font-size:18px}.btn{display:inline-block;background:#ffd400;color:#111;padding:13px 24px;border-radius:30px;text-decoration:none;font-weight:800;margin:6px}.btn-green{background:#25D366;color:#fff}.btn-dark{background:#111;color:#fff}.badge{background:#ffd400;color:#111;padding:6px 12px;border-radius:20px;font-weight:800;display:inline-block}.section{padding:28px 18px;max-width:1150px;margin:auto}.filters{text-align:center;margin:16px 0}.filters button{padding:10px 16px;border-radius:20px;border:1px solid #ddd;background:#fff;cursor:pointer;margin:4px;font-weight:700}.filters button.active{background:#111;color:#fff}.grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(300px,1fr));gap:18px}.card{background:#fff;border-radius:18px;overflow:hidden;box-shadow:0 6px 20px rgba(0,0,0,.08);border:1px solid #eee}.card img{width:100%;height:210px;object-fit:cover}.card-body{padding:16px}.price{font-size:24px;font-weight:900}.meta{color:#666;font-size:13px}.strip{display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:14px}.strip img{width:100%;height:150px;object-fit:cover;border-radius:14px}.form{background:#fff;border-radius:18px;padding:22px;box-shadow:0 6px 20px rgba(0,0,0,.08)}input,select,textarea{width:100%;padding:12px;margin:7px 0;border:1px solid #ddd;border-radius:10px;font-size:15px}label{font-weight:700;font-size:13px}.booking-item{border:1px solid #eee;border-radius:12px;padding:12px;margin:8px 0;background:#fffdf5}.two{display:grid;grid-template-columns:1fr 1fr;gap:14px}@media(max-width:700px){.two{grid-template-columns:1fr}.hero h1{font-size:32px}}footer{background:#111;color:#fff;padding:30px 18px;text-align:center}footer a{color:#ffd400}</style></head><body style='padding-top:48px'>
+<header><div class="logo">BOOKING <span>YOUR TOURS</span> | DuneVolt Dubai</div><div><a href="tel:+971521144089">📞 +971521144089</a> &nbsp; <a href="https://wa.me/971521144089">💬 WhatsApp</a></div></header>
+<div class="hero"><div><span class="badge">BOGO • BUY 1 GET 1 FREE</span><h1>Dubai Desert Safari &<br>Lahbab Red Dunes</h1><p>Morning & Evening Safaris, Quad Bikes, Dune Buggies & Private UAE Tours. Real people. Local support. 4x4 Pickup Included.</p><a class="btn" href="#tours">Find Your Adventure ↓</a><a class="btn btn-green" href="https://wa.me/971521144089?text=Hi%20Booking%20Your%20Tours%2C%20I%20want%20to%20book%20a%20desert%20safari">WhatsApp Us</a><a class="btn btn-dark" href="tel:+971521144089">Call Now</a><p style="margin-top:14px">⭐ Since 2024 • Local Expertise • Private & Shared Options</p></div></div>
+
+<div class="section" style="text-align:center;background:#ffd400;border-radius:18px;margin:20px"><h2 style="margin:0">One Adventure. Two Happy Guests.</h2><p>Six Buy 1 Get 1 Free experiences. Bring someone along for the ride.</p></div>
+
+<div class="section" id="tours"><h2 style="text-align:center">Find Your Kind of Adventure</h2><div class="filters"><button class="active" onclick="filterTours('all',this)">All</button><button onclick="filterTours('desert',this)">Desert Safari</button><button onclick="filterTours('quad',this)">Quad & Buggy</button><button onclick="filterTours('city',this)">City Tours</button></div>
+<div class="grid" id="tourGrid">
+<div class="card" data-cat="desert"><img src="images/camel.jpg"><div class="card-body"><span class="badge">BOGO</span><h3>Morning Desert Safari with Camel Ride & Sandboarding</h3><p>30-35 min dune bashing, 20-min camel ride, sandboarding, falcon photo, 4x4 pickup.</p><p class="meta">Approx 4 hours • Pickup Included</p><p class="price">AED 270</p><button class="btn" onclick="bookTour('Morning Desert Safari - AED 270')">Book This Tour</button></div></div>
+<div class="card" data-cat="quad"><img src="images/quad_selfie.jpg"><div class="card-body"><span class="badge">BOGO</span><h3>Morning Safari with Quad Bike + Camel Ride & Sandboarding</h3><p>Quad bike ride in Lahbab desert, dune bashing, sandboarding, camel ride, falcon photo.</p><p class="meta">Approx 4 hours • Pickup Included</p><p class="price">AED 450</p><button class="btn" onclick="bookTour('Morning Safari with Quad Bike - AED 450')">Book This Tour</button></div></div>
+<div class="card" data-cat="desert"><img src="images/camp.jpg"><div class="card-body"><span class="badge">BOGO</span><h3>Evening Desert Safari with BBQ Dinner & Shows Premium Camp</h3><p>Dune bashing, sandboarding, camel ride, premium camp, BBQ buffet + Belly Dance + Tanoura + Fire Show.</p><p class="meta">Approx 6-7 hours • Pickup Included</p><p class="price">AED 299</p><button class="btn" onclick="bookTour('Evening Safari BBQ & Shows - AED 299')">Book This Tour</button></div></div>
+<div class="card" data-cat="quad"><img src="images/quad_selfie.jpg"><div class="card-body"><span class="badge">BOGO</span><h3>Evening Safari with ATV Ride BBQ Dinner Premium Camp</h3><p>ATV ride + evening safari across Lahbab Red Dunes + BBQ dinner.</p><p class="meta">Approx 6-7 hours • Pickup Included</p><p class="price">AED 480</p><button class="btn" onclick="bookTour('Evening Safari ATV BBQ - AED 480')">Book This Tour</button></div></div>
+<div class="card" data-cat="desert"><img src="images/camels.jpg"><div class="card-body"><span class="badge">BOGO</span><h3>Evening Safari + 20-Min Long Camel Ride</h3><p>Dune bashing, sandboarding, dedicated 20-min camel ride, camp, BBQ dinner, live entertainment.</p><p class="meta">Approx 6-7 hours • Pickup Included</p><p class="price">AED 380</p><button class="btn" onclick="bookTour('Evening Safari 20-Min Camel Ride - AED 380')">Book This Tour</button></div></div>
+<div class="card" data-cat="quad"><img src="images/buggy.jpg"><div class="card-body"><span class="badge">BOGO</span><h3>60-Min Can-Am Dune Buggy + Premium Camp Dinner & Live Shows</h3><p>60-min Can-Am self-drive, camel, sandboarding, falcon, BBQ, live shows.</p><p class="meta">Approx 7 hours • Pickup Included</p><p class="price">AED 550</p><button class="btn" onclick="bookTour('Can-Am Buggy 60-Min + Camp - AED 550')">Book This Tour</button></div></div>
+<div class="card" data-cat="city"><img src="images/dubai_city.jpg"><div class="card-body"><h3>Private Dubai City Highlights Tour</h3><p>Old Dubai, Burj Al Arab, Palm & Marina. Al Seef, Al Fahidi, Jumeirah Mosque, Atlantis, Marina, JBR.</p><p class="meta">Approx 4-5 hours • Pickup Included</p><p class="price">AED 350</p><button class="btn" onclick="bookTour('Dubai City Highlights - AED 350')">Book This Tour</button></div></div>
+<div class="card" data-cat="city"><img src="images/abu_dhabi.jpg"><div class="card-body"><h3>Abu Dhabi City Tour with Grand Mosque & Corniche</h3><p>Sheikh Zayed Grand Mosque, Corniche views, guided intro to UAE capital.</p><p class="meta">Approx 8 hours • Pickup Included</p><p class="price">AED 450</p><button class="btn" onclick="bookTour('Abu Dhabi City Tour - AED 450')">Book This Tour</button></div></div>
+<div class="card" data-cat="city"><img src="images/hatta.jpg"><div class="card-body"><h3>Private Hatta City & Mountain Tour</h3><p>Hajar Mountains, Hatta Water Dam, heritage, scenic parks, photo stops.</p><p class="meta">Approx 6-7 hours • Pickup Included</p><p class="price">AED 500</p><button class="btn" onclick="bookTour('Hatta Tour - AED 500')">Book This Tour</button></div></div>
+<div class="card" data-cat="city"><img src="images/fujairah.jpg"><div class="card-body"><h3>Private Fujairah City Tour – Mountains, Heritage & East Coast</h3><p>Hajar Mountains, traditional markets, Fujairah heritage, coastal scenery, Khorfakkan.</p><p class="meta">Approx 8 hours • Pickup Included</p><p class="price">AED 550</p><button class="btn" onclick="bookTour('Fujairah Tour - AED 550')">Book This Tour</button></div></div>
+<div class="card" data-cat="city"><img src="images/rak_jebel_jais.jpg"><div class="card-body"><h3>Ras Al Khaimah & Jebel Jais Tour</h3><p>Jazirat Al Hamra, Dhayah Fort, coastal scenery, Jebel Jais mountain roads.</p><p class="meta">Approx 8 hours • Pickup Included</p><p class="price">AED 550</p><button class="btn" onclick="bookTour('RAK & Jebel Jais - AED 550')">Book This Tour</button></div></div>
+<div class="card" data-cat="city"><img src="images/alain_hafeet.jpg"><div class="card-body"><h3>Al Ain Jebel Hafeet Day Tour</h3><p>Green oasis, historic landmarks, camel market, mountain scenery, Jebel Hafeet.</p><p class="meta">Approx 8 hours • Pickup Included</p><p class="price">AED 500</p><button class="btn" onclick="bookTour('Al Ain Jebel Hafeet - AED 500')">Book This Tour</button></div></div>
+</div></div>
+
+<div class="section"><h2>Experience It All</h2><div class="strip"><div><img src="images/sand.jpg"><p><b>Sandboarding</b></p></div><div><img src="images/camels.jpg"><p><b>Camel Ride</b></p></div><div><img src="images/camp.jpg"><p><b>BBQ + Belly Dance + Tanoura + Fire Show</b></p></div><div><img src="images/buggy.jpg"><p><b>Dune Buggy & Quad</b></p></div></div></div>
+
+<div class="section" id="book"><h2>Book Your Tour</h2><div class="two"><form class="form" onsubmit="return submitBooking(event)"><label>Full Name *</label><input id="fName" required placeholder="Your name"><label>Phone / WhatsApp *</label><input id="fPhone" required placeholder="+971..."><label>Email</label><input id="fEmail" placeholder="email"><label>Tour *</label><select id="fTour"><option>Morning Desert Safari - AED 270</option><option>Morning Safari with Quad Bike - AED 450</option><option>Evening Safari BBQ & Shows - AED 299</option><option>Evening Safari ATV BBQ - AED 480</option><option>Evening Safari 20-Min Camel Ride - AED 380</option><option>Can-Am Buggy 60-Min + Camp - AED 550</option><option>Dubai City Highlights - AED 350</option><option>Abu Dhabi City Tour - AED 450</option><option>Hatta Tour - AED 500</option><option>Fujairah Tour - AED 550</option><option>RAK & Jebel Jais - AED 550</option><option>Al Ain Jebel Hafeet - AED 500</option></select><label>Date *</label><input id="fDate" type="date" required><label>Adults</label><input id="fAdults" type="number" value="2" min="1"><label>Children</label><input id="fChildren" type="number" value="0" min="0"><label>Pickup Hotel / Location</label><input id="fPickup" placeholder="Hotel name / area"><label>Special Requests</label><textarea id="fReq" placeholder="Anything we should know?"></textarea><button class="btn btn-green" style="width:100%;border:0;cursor:pointer" type="submit">Confirm on WhatsApp & Save Booking</button><a class="btn" href="tel:+971521144089" style="display:block;text-align:center">Call +971521144089</a><p style="text-align:center">Or book directly on WhatsApp: <b>+971521144089</b></p><p id="msg" style="color:green;font-weight:800;text-align:center"></p></form><div><h3>My Bookings</h3><p>Bookings are saved in this browser + sent to WhatsApp. Refresh to see them.</p><button class="btn" onclick="renderBookings()">Refresh Bookings</button><div id="bookingsList"></div></div></div></div>
+
+<div class="section"><h2>Guest Reviews ⭐ 5.0</h2><p><b>Ahmed K.</b> — Amazing dune bashing and camp shows. Guide was very helpful!</p><p><b>Sara M.</b> — Best evening safari, BBQ was delicious, kids loved camel ride.</p><p><b>John D.</b> — Quad bike + buggy was unforgettable. Highly recommended!</p></div>
+<footer><h3>Booking Your Tours - DuneVolt Dubai</h3><p>Call: <a href="tel:+971521144089">+971521144089</a> | WhatsApp: <a href="https://wa.me/971521144089">+971521144089</a></p><p>bookingyourtours.com • Dubai, UAE</p></footer>
+<script>
+function filterTours(cat,btn){document.querySelectorAll('.filters button').forEach(b=>b.classList.remove('active'));btn.classList.add('active');document.querySelectorAll('#tourGrid .card').forEach(c=>{c.style.display=(cat==='all'||c.dataset.cat===cat)?'block':'none'})}
+function bookTour(t){document.getElementById('fTour').value=t;document.getElementById('book').scrollIntoView({behavior:'smooth'});alert('Selected: '+t+' - Now fill your details below!')}
+function getBookings(){try{return JSON.parse(localStorage.getItem('byt_bookings')||'[]')}catch(e){return[]}}
+function renderBookings(){let list=document.getElementById('bookingsList');let b=getBookings();if(!b.length){list.innerHTML='<p>No bookings yet. Book above!</p>';return}list.innerHTML=b.map((x,i)=>'<div class="booking-item"><b>'+x.name+'</b> • '+x.tour+'<br>Date: '+x.date+' • Guests: '+x.adults+' Adults, '+x.children+' Children<br>Phone: <a href="tel:'+x.phone+'">'+x.phone+'</a> • Pickup: '+(x.pickup||'-')+'<br>Status: '+x.status+' <button onclick="delBooking('+i+')">Delete</button></div>').join('')}
+function delBooking(i){let b=getBookings();b.splice(i,1);localStorage.setItem('byt_bookings',JSON.stringify(b));renderBookings()}
+function submitBooking(e){e.preventDefault();let b={name:document.getElementById('fName').value,phone:document.getElementById('fPhone').value,email:document.getElementById('fEmail').value,tour:document.getElementById('fTour').value,date:document.getElementById('fDate').value,adults:document.getElementById('fAdults').value,children:document.getElementById('fChildren').value,pickup:document.getElementById('fPickup').value,req:document.getElementById('fReq').value,status:'New',created:new Date().toLocaleString()};let all=getBookings();all.push(b);localStorage.setItem('byt_bookings',JSON.stringify(all));renderBookings();document.getElementById('msg').innerText='Booking saved! Opening WhatsApp to confirm...';let msg='Hi Booking Your Tours, I want to book: '+b.tour+' | Name: '+b.name+' | Date: '+b.date+' | Guests: '+b.adults+' Adults, '+b.children+' Children | Pickup: '+b.pickup;window.open('https://wa.me/971521144089?text='+encodeURIComponent(msg),'_blank');return false}
+renderBookings();
+</script>
+<!-- Booking Your Tours AI Chat -->
+<style>
+#byt-chat-btn{position:fixed;bottom:20px;right:20px;background:#ffd400;color:#111;border:0;width:60px;height:60px;border-radius:50%;font-size:28px;cursor:pointer;box-shadow:0 6px 20px rgba(0,0,0,.3);z-index:9999}
+#byt-chat-box{position:fixed;bottom:90px;right:20px;width:340px;max-width:92vw;background:#fff;border-radius:18px;box-shadow:0 10px 30px rgba(0,0,0,.25);overflow:hidden;display:none;z-index:9999;font-family:Arial,sans-serif}
+#byt-chat-head{background:#111;color:#fff;padding:14px;display:flex;justify-content:space-between;align-items:center}
+#byt-chat-head b{color:#ffd400}
+#byt-chat-msgs{height:320px;overflow-y:auto;padding:12px;background:#fff8ec}
+.byt-msg{padding:9px 12px;border-radius:14px;margin:7px 0;max-width:85%;font-size:14px;line-height:1.4}
+.byt-bot{background:#fff;border:1px solid #eee}
+.byt-user{background:#111;color:#fff;margin-left:auto;text-align:right}
+#byt-chat-input{display:flex;padding:10px;gap:6px;border-top:1px solid #eee}
+#byt-chat-input input{flex:1;padding:10px;border:1px solid #ddd;border-radius:20px}
+#byt-chat-input button{background:#25D366;color:#fff;border:0;padding:10px 16px;border-radius:20px;cursor:pointer;font-weight:800}
+.byt-quick{display:flex;flex-wrap:wrap;gap:6px;padding:0 10px 10px;background:#fff8ec}
+.byt-quick button{background:#fff;border:1px solid #ddd;padding:7px 10px;border-radius:20px;cursor:pointer;font-size:12px;font-weight:700}
+</style>
+<button id="byt-chat-btn" onclick="toggleChat()">💬</button>
+<div id="byt-chat-box">
+<div id="byt-chat-head"><div><b>Booking Your Tours</b><br><small style="color:#fff">● Online • Replies instantly</small></div><button onclick="toggleChat()" style="background:none;border:0;color:#fff;font-size:20px;cursor:pointer">✕</button></div>
+<div id="byt-chat-msgs"><div class="byt-msg byt-bot">Hi! 👋 Welcome to <b>Booking Your Tours</b> — Best Desert Safari in Dubai! 🌵<br><br>Ask me about prices, Quad Bike, Buggy, BBQ Dinner, Pickup time...<br>Or book directly on WhatsApp <b>+971521144089</b></div></div>
+<div class="byt-quick">
+<button onclick="quickAsk('Best desert safari price?')">Best price?</button>
+<button onclick="quickAsk('Quad bike tour')">Quad Bike</button>
+<button onclick="quickAsk('Evening safari with BBQ')">Evening BBQ</button>
+<button onclick="quickAsk('Pickup time')">Pickup time?</button>
+<button onclick="quickAsk('Book now')">Book Now</button>
+</div>
+<div id="byt-chat-input"><input id="byt-input" placeholder="Type your question..." onkeypress="if(event.key==='Enter') sendChat()"><button onclick="sendChat()">Send</button></div>
+</div>
+<script>
+function toggleChat(){let b=document.getElementById('byt-chat-box');b.style.display=b.style.display==='block'?'none':'block'}
+function quickAsk(t){document.getElementById('byt-input').value=t;sendChat()}
+function sendChat(){let inp=document.getElementById('byt-input');let q=inp.value.trim();if(!q) return;let box=document.getElementById('byt-chat-msgs');box.innerHTML+='<div class="byt-msg byt-user">'+q+'</div>';inp.value='';setTimeout(()=>{box.innerHTML+='<div class="byt-msg byt-bot">'+getAnswer(q)+'</div>';box.scrollTop=box.scrollHeight},400);box.scrollTop=box.scrollHeight}
+function getAnswer(q){q=q.toLowerCase();
+if(q.includes('best')||q.includes('recommend')||q.includes('top')) return '<b>Best Desert Safari in Dubai? Booking Your Tours! ⭐</b><br>Our most popular is <b>Evening Safari with BBQ + Shows — AED 299 BOGO</b> — Pay for 1, 2nd FREE! Dune bashing, camel ride, sandboarding, BBQ buffet, Belly Dance + Tanoura + Fire Show.<br><br><a href="https://wa.me/971521144089?text=Hi%20I%20want%20best%20desert%20safari">👉 Book on WhatsApp</a>';
+if(q.includes('quad')||q.includes('atv')||q.includes('bike')) return '<b>Quad Bike Tours:</b><br>• Morning Safari + Quad Bike — <b>AED 450 BOGO</b><br>• Evening Safari + ATV + BBQ — <b>AED 480 BOGO</b><br>Quad ride in Lahbab Red Dunes + dune bashing + camel + sandboarding.<br><br><a href="https://wa.me/971521144089?text=Hi%20I%20want%20quad%20bike%20tour">Book Quad on WhatsApp</a>';
+if(q.includes('buggy')||q.includes('can-am')||q.includes('dune buggy')) return '<b>Can-Am Dune Buggy — AED 550 BOGO</b><br>60-min self-drive buggy + Premium Camp + BBQ Dinner + Live Shows + Camel + Sandboarding.<br><br><a href="https://wa.me/971521144089?text=Hi%20I%20want%20dune%20buggy">Book Buggy on WhatsApp</a>';
+if(q.includes('evening')||q.includes('bbq')||q.includes('dinner')||q.includes('show')||q.includes('belly')) return '<b>Evening Safari — AED 299 BOGO</b><br>Dune bashing, sandboarding, camel ride, premium camp, BBQ buffet, Belly Dance, Tanoura Dance, Fire Show.<br>Pickup ~3pm, back ~9pm.<br><br><a href="https://wa.me/971521144089?text=Hi%20I%20want%20evening%20safari%20BBQ">Book Evening Safari</a>';
+if(q.includes('morning')) return '<b>Morning Safari — AED 270 BOGO</b><br>30-35 min dune bashing, 20-min camel ride, sandboarding, falcon photo.<br>Pickup ~8am, back ~12pm.<br><br><a href="https://wa.me/971521144089?text=Hi%20I%20want%20morning%20safari">Book Morning Safari</a>';
+if(q.includes('camel')) return '<b>Camel Ride:</b> Included in all safaris! Plus 20-min Long Camel Ride option — Evening Safari + 20-min Camel — <b>AED 380 BOGO</b>';
+if(q.includes('pickup')||q.includes('pick up')||q.includes('time')||q.includes('when')) return '<b>Pickup:</b><br>• Morning: ~8:00 AM<br>• Evening: ~3:00 PM<br>We pick up from any hotel / location in Dubai, Sharjah, Ajman. Free 4x4 pickup included!';
+if(q.includes('price')||q.includes('cost')||q.includes('cheap')||q.includes('aed')||q.includes('how much')) return '<b>Our Prices (BOGO — Pay for 1, 2nd FREE):</b><br>• Morning Safari — 270 AED<br>• Evening Safari BBQ — 299 AED<br>• Morning + Quad — 450 AED<br>• Evening + ATV — 480 AED<br>• Buggy 60-min — 550 AED<br>• Dubai City — 350 AED<br>• Abu Dhabi — 450 AED<br><br><a href="https://wa.me/971521144089?text=Hi%20I%20want%20to%20check%20prices">Check on WhatsApp</a>';
+if(q.includes('city')||q.includes('dubai tour')||q.includes('abu dhabi')||q.includes('hatta')||q.includes('fujairah')||q.includes('rak')||q.includes('al ain')) return '<b>City Tours:</b><br>• Dubai Highlights — 350 AED<br>• Abu Dhabi Grand Mosque — 450 AED<br>• Hatta Mountains & Dam — 500 AED<br>• Fujairah East Coast — 550 AED<br>• RAK & Jebel Jais — 550 AED<br>• Al Ain Jebel Hafeet — 500 AED<br>All private with pickup.<br><br><a href="https://wa.me/971521144089?text=Hi%20I%20want%20city%20tour">Book City Tour</a>';
+if(q.includes('book')||q.includes('reserve')||q.includes('whatsapp')||q.includes('phone')||q.includes('contact')) return 'Great! 🎉 To book, send us on WhatsApp:<br><b>+971521144089</b><br>Or click here:<br><a href="https://wa.me/971521144089?text=Hi%20Booking%20Your%20Tours%2C%20I%20want%20to%20book">👉 Book on WhatsApp Now</a><br>Or call: <a href="tel:+971521144089">+971521144089</a>';
+if(q.includes('hi')||q.includes('hello')||q.includes('salam')) return 'Hi! 👋 Welcome to Booking Your Tours! What are you looking for? Best Desert Safari, Quad Bike, Buggy, or City Tour? Type <b>price</b> to see all prices.';
+return 'Great question! For best help, chat with us directly on WhatsApp <b>+971521144089</b> — we reply in 2 minutes.<br><br>Or type: <b>price</b>, <b>quad</b>, <b>evening safari</b>, <b>pickup time</b><br><br><a href="https://wa.me/971521144089">👉 Chat on WhatsApp</a>';
+}
+</script>
+
+<!-- TRANSLATOR - Whole page at once via Google -->
+<style>
+#byt-lang-bar{position:fixed;top:0;left:0;right:0;background:#111;color:#fff;padding:10px 12px;display:flex;justify-content:center;align-items:center;gap:10px;z-index:10000;font-family:Arial,sans-serif;font-size:14px;flex-wrap:wrap}
+#byt-lang-bar b{color:#ffd400}
+#byt-lang-bar select{padding:8px 14px;border-radius:20px;border:0;font-weight:800;cursor:pointer;background:#ffd400;font-size:15px}
+</style>
+<div id="byt-lang-bar">🌍 <b>Booking Your Tours</b> — Language: <select id="byt-lang-select"><option value="en">🇬🇧 English</option><option value="ru">🇷🇺 Russian</option><option value="ar">🇦🇪 Arabic</option><option value="de">🇩🇪 German</option><option value="fr">🇫🇷 French</option><option value="it">🇮🇹 Italian</option><option value="es">🇪🇸 Spanish</option></select><span>• WhatsApp: +971521144089</span></div>
+<script>
+(function(){
+var sel=document.getElementById('byt-lang-select');
+// Show current language if already on translated page
+var m=window.location.search.match(/_x_tr_tl=([^&]+)/);
+if(m && sel) sel.value=decodeURIComponent(m[1]);
+if(sel) sel.addEventListener('change', function(){
+  var lang=this.value;
+  if(lang==='en'){
+    // back to original site
+    if(window.location.hostname.indexOf('translate.goog')!==-1){ window.location.href='https://bookingyourtours.com'; }
+    return;
+  }
+  // If testing locally (file://), use fallback alert - translate.goog needs live site
+  if(window.location.protocol==='file:'){
+    alert('This translate needs the LIVE site. Upload to GitHub first, then open bookingyourtours.com and choose '+lang+' - full page will change. For now, this preview cannot translate.');
+    return;
+  }
+  // Whole page at once via Google Translate - translates EVERYTHING including hero
+  var url='https://bookingyourtours-com.translate.goog/?_x_tr_sl=en&_x_tr_tl='+lang+'&_x_tr_hl=en&_x_tr_pto=wapp';
+  window.location.href=url;
+});
+})();
+</script>
+</body></html>
