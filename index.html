@@ -86,20 +86,30 @@ return 'Great question! For best help, chat with us directly on WhatsApp <b>+971
 }
 </script>
 
-<!-- Google Translate In-Page Widget - Official, works on custom domain -->
+<!-- Native Language Names - Each in its own language -->
 <style>
 #byt-lang-bar{position:fixed;top:0;left:0;right:0;background:#111;color:#fff;padding:8px 12px;display:flex;justify-content:center;align-items:center;gap:10px;z-index:10000;font-family:Arial,sans-serif;font-size:14px;flex-wrap:wrap}
 #byt-lang-bar b{color:#ffd400}
-#google_translate_element .goog-te-gadget-simple{background:#ffd400!important;border:0!important;border-radius:20px!important;padding:6px 12px!important;font-weight:800!important}
-#google_translate_element .goog-te-gadget-simple a{color:#111!important}
+#byt-lang-select{padding:8px 14px;border-radius:20px;border:0;font-weight:800;cursor:pointer;background:#ffd400;font-size:15px;color:#111}
+#google_translate_element{display:none}
 .goog-te-banner-frame.skiptranslate{display:none!important}
 body{top:0!important}
 </style>
-<div id="byt-lang-bar">🌍 <b>Booking Your Tours</b> — Translate full site: <div id="google_translate_element"></div><span>• WhatsApp: +971521144089</span></div>
+<div id="byt-lang-bar">🌍 <b>Booking Your Tours</b> — 🌐 <select id="byt-lang-select"><option value="en">English</option><option value="ar">العربية</option><option value="ru">Русский</option><option value="de">Deutsch</option><option value="fr">Français</option><option value="it">Italiano</option><option value="es">Español</option><option value="hi">हिन्दी</option><option value="ur">اردو</option><option value="tr">Türkçe</option><option value="fa">فارسی</option></select><span>• WhatsApp: +971521144089</span></div>
+<div id="google_translate_element"></div>
 <script>
 function googleTranslateElementInit(){
   new google.translate.TranslateElement({pageLanguage:'en', includedLanguages:'en,ar,ru,fr,de,it,es,hi,ur,tr,fa', layout:google.translate.TranslateElement.InlineLayout.SIMPLE, autoDisplay:false}, 'google_translate_element');
 }
+function bytSetLang(lang){
+  var combo=document.querySelector('.goog-te-combo');
+  if(!combo){ setTimeout(function(){bytSetLang(lang)},500); return; }
+  combo.value=lang; combo.dispatchEvent(new Event('change'));
+}
+document.addEventListener('DOMContentLoaded', function(){
+  var sel=document.getElementById('byt-lang-select');
+  if(sel) sel.addEventListener('change', function(){ bytSetLang(this.value); });
+});
 </script>
 <script src="//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
 </body></html>
