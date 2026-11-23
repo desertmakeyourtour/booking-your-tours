@@ -13,7 +13,7 @@
 <div class="card" data-cat="desert"><img src="images/camp.jpg"><div class="card-body"><span class="badge">BOGO</span><h3>Evening Desert Safari with BBQ Dinner & Shows Premium Camp</h3><p>Dune bashing, sandboarding, camel ride, premium camp, BBQ buffet + Belly Dance + Tanoura + Fire Show.</p><p class="meta">Approx 6-7 hours • Pickup Included</p><p class="price">AED 299</p><button class="btn" onclick="bookTour('Evening Safari BBQ & Shows - AED 299')">Book This Tour</button></div></div>
 <div class="card" data-cat="quad"><img src="images/quad_selfie.jpg"><div class="card-body"><span class="badge">BOGO</span><h3>Evening Safari with ATV Ride BBQ Dinner Premium Camp</h3><p>ATV ride + evening safari across Lahbab Red Dunes + BBQ dinner.</p><p class="meta">Approx 6-7 hours • Pickup Included</p><p class="price">AED 480</p><button class="btn" onclick="bookTour('Evening Safari ATV BBQ - AED 480')">Book This Tour</button></div></div>
 <div class="card" data-cat="desert"><img src="images/camels.jpg"><div class="card-body"><span class="badge">BOGO</span><h3>Evening Safari + 20-Min Long Camel Ride</h3><p>Dune bashing, sandboarding, dedicated 20-min camel ride, camp, BBQ dinner, live entertainment.</p><p class="meta">Approx 6-7 hours • Pickup Included</p><p class="price">AED 380</p><button class="btn" onclick="bookTour('Evening Safari 20-Min Camel Ride - AED 380')">Book This Tour</button></div></div>
-<div class="card" data-cat="quad"><img src="images/buggy.jpg"><div class="card-body"><span class="badge">BOGO</span><h3>30-Min Can-Am Dune Buggy + Premium Camp Dinner & Live Shows</h3><p>30-min Can-Am self-drive, camel, sandboarding, falcon, BBQ, live shows.</p><p class="meta">Approx 7 hours • Pickup Included</p><p class="price">AED 550</p><button class="btn" onclick="bookTour('Can-Am Buggy 30-Min + Camp - AED 550')">Book This Tour</button></div></div>
+<div class="card" data-cat="quad"><img src="images/buggy.jpg"><div class="card-body"><span class="badge">BOGO</span><h3>60-Min Can-Am Dune Buggy + Premium Camp Dinner & Live Shows</h3><p>60-min Can-Am self-drive, camel, sandboarding, falcon, BBQ, live shows.</p><p class="meta">Approx 7 hours • Pickup Included</p><p class="price">AED 550</p><button class="btn" onclick="bookTour('Can-Am Buggy 60-Min + Camp - AED 550')">Book This Tour</button></div></div>
 <div class="card" data-cat="city"><img src="images/dubai_city.jpg"><div class="card-body"><h3>Private Dubai City Highlights Tour</h3><p>Old Dubai, Burj Al Arab, Palm & Marina. Al Seef, Al Fahidi, Jumeirah Mosque, Atlantis, Marina, JBR.</p><p class="meta">Approx 4-5 hours • Pickup Included</p><p class="price">AED 350</p><button class="btn" onclick="bookTour('Dubai City Highlights - AED 350')">Book This Tour</button></div></div>
 <div class="card" data-cat="city"><img src="images/abu_dhabi.jpg"><div class="card-body"><h3>Abu Dhabi City Tour with Grand Mosque & Corniche</h3><p>Sheikh Zayed Grand Mosque, Corniche views, guided intro to UAE capital.</p><p class="meta">Approx 8 hours • Pickup Included</p><p class="price">AED 450</p><button class="btn" onclick="bookTour('Abu Dhabi City Tour - AED 450')">Book This Tour</button></div></div>
 <div class="card" data-cat="city"><img src="images/hatta.jpg"><div class="card-body"><h3>Private Hatta City & Mountain Tour</h3><p>Hajar Mountains, Hatta Water Dam, heritage, scenic parks, photo stops.</p><p class="meta">Approx 6-7 hours • Pickup Included</p><p class="price">AED 500</p><button class="btn" onclick="bookTour('Hatta Tour - AED 500')">Book This Tour</button></div></div>
@@ -86,35 +86,20 @@ return 'Great question! For best help, chat with us directly on WhatsApp <b>+971
 }
 </script>
 
-<!-- TRANSLATOR - Whole page at once via Google -->
+<!-- Google Translate In-Page Widget - Official, works on custom domain -->
 <style>
-#byt-lang-bar{position:fixed;top:0;left:0;right:0;background:#111;color:#fff;padding:10px 12px;display:flex;justify-content:center;align-items:center;gap:10px;z-index:10000;font-family:Arial,sans-serif;font-size:14px;flex-wrap:wrap}
+#byt-lang-bar{position:fixed;top:0;left:0;right:0;background:#111;color:#fff;padding:8px 12px;display:flex;justify-content:center;align-items:center;gap:10px;z-index:10000;font-family:Arial,sans-serif;font-size:14px;flex-wrap:wrap}
 #byt-lang-bar b{color:#ffd400}
-#byt-lang-bar select{padding:8px 14px;border-radius:20px;border:0;font-weight:800;cursor:pointer;background:#ffd400;font-size:15px}
+#google_translate_element .goog-te-gadget-simple{background:#ffd400!important;border:0!important;border-radius:20px!important;padding:6px 12px!important;font-weight:800!important}
+#google_translate_element .goog-te-gadget-simple a{color:#111!important}
+.goog-te-banner-frame.skiptranslate{display:none!important}
+body{top:0!important}
 </style>
-<div id="byt-lang-bar">🌍 <b>Booking Your Tours</b> — Language: <select id="byt-lang-select"><option value="en">🇬🇧 English</option><option value="ru">🇷🇺 Russian</option><option value="ar">🇦🇪 Arabic</option><option value="de">🇩🇪 German</option><option value="fr">🇫🇷 French</option><option value="it">🇮🇹 Italian</option><option value="es">🇪🇸 Spanish</option></select><span>• WhatsApp: +971521144089</span></div>
+<div id="byt-lang-bar">🌍 <b>Booking Your Tours</b> — Translate full site: <div id="google_translate_element"></div><span>• WhatsApp: +971521144089</span></div>
 <script>
-(function(){
-var sel=document.getElementById('byt-lang-select');
-// Show current language if already on translated page
-var m=window.location.search.match(/_x_tr_tl=([^&]+)/);
-if(m && sel) sel.value=decodeURIComponent(m[1]);
-if(sel) sel.addEventListener('change', function(){
-  var lang=this.value;
-  if(lang==='en'){
-    // back to original site
-    if(window.location.hostname.indexOf('translate.goog')!==-1){ window.location.href='https://bookingyourtours.com'; }
-    return;
-  }
-  // If testing locally (file://), use fallback alert - translate.goog needs live site
-  if(window.location.protocol==='file:'){
-    alert('This translate needs the LIVE site. Upload to GitHub first, then open bookingyourtours.com and choose '+lang+' - full page will change. For now, this preview cannot translate.');
-    return;
-  }
-  // Whole page at once via Google Translate - translates EVERYTHING including hero
-  var url='https://bookingyourtours-com.translate.goog/?_x_tr_sl=en&_x_tr_tl='+lang+'&_x_tr_hl=en&_x_tr_pto=wapp';
-  window.location.href=url;
-});
-})();
+function googleTranslateElementInit(){
+  new google.translate.TranslateElement({pageLanguage:'en', includedLanguages:'en,ar,ru,fr,de,it,es,hi,ur,tr,fa', layout:google.translate.TranslateElement.InlineLayout.SIMPLE, autoDisplay:false}, 'google_translate_element');
+}
 </script>
+<script src="//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
 </body></html>
